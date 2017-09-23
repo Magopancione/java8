@@ -1,4 +1,6 @@
 FROM centos:centos6
+VOLUME /opt/jboss
+VOLUME /home/jboss
 RUN yum -y install wget && \
 	wget --no-cookies \
          --no-check-certificate \
